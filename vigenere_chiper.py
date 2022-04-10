@@ -1,5 +1,3 @@
-import pyperclip
-
 ALHPABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
@@ -9,18 +7,15 @@ def main():
     pesanSaya = """Nim: 19102138, nama: Fahri Rizmawan, isi pesan: ini adalah tugas dua kriptografi kelas TI dua"""
     kunciSaya = 'Informatika19'
     #untuk melakukan proses enkripsi atau dekripsi
-    modeSaya = 'enkripsi'
+    Proses = 'enkripsi'
 
-    if modeSaya == 'enkripsi':
+    if Proses == 'enkripsi':
         ubah = enkripsiPesan(kunciSaya, pesanSaya)
-    elif modeSaya == 'dekripsi':
+    elif Proses == 'dekripsi':
         ubah = dekripsiPesan(kunciSaya, pesanSaya)
 
-    print('%sed pesan : ' % (modeSaya.title()))
-    print(ubah)
-    pyperclip.copy(ubah)
+    print('%sed pesan : ' % (Proses.title()))
     print()
-    print('Pesan akan disalin kedalam papan klip.')
 
 
 # pada bagian ini menjelaskan bagaimana enkripsi berjalan
