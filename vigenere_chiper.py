@@ -15,6 +15,7 @@ def main():
         ubah = dekripsiPesan(kunciSaya, pesanSaya)
 
     print('%sed pesan : ' % (Proses.title()))
+    print(ubah)
     print()
 
 
